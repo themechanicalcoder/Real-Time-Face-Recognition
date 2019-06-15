@@ -18,8 +18,10 @@ It is a Machine Learning project that recognizes faces of multiple people using 
   Matplotlib<br/>
 
 ## Algorithm
-First the face is extracted from the image using [haar-cascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)<br/>
-Then the image is fed into the Google facenet which returns a 128 length <br/>
-The list of images is then fed into SVM <br/>
+1.First the face is extracted from the image using [haar-cascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)<br/>
+2.Then the image is fed into the Google facenet which returns a 128 length <br/>
+3.The list of images is then fed into SVM <br/>
+4.For live prediction using webcam input image is taken from open-cv and it is again converted into a 128 length vector which is then passed then answer is predicted using the trained SVM model <br/>
 
-References [Google Facenet model](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn) for converting a face into a vector of size 128 which is then fed into SVM 
+References [Google Facenet model](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn)  <br/>
+The model achieved an accuracy of around 95.6% which is quite good as theere were a total of around 100 images per class<br/>  
