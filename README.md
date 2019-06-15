@@ -24,5 +24,28 @@ It is a Machine Learning project that recognizes faces of multiple people using 
 4. The model is then tested for accuracy (test.py)
 5. For live prediction using webcam input image is taken from open-cv and it is again converted into 128 length vector using steps 1 to 3 <br/>
 
+## How to use this repository
+Make the following directory structure  <br/>
+Dataset->data->train->training classes with images of respective classes <br/>
+Dataset->data->val->test classes with images of respective classes <br/>
+![New Doc 2019-06-15 19 18 29](https://user-images.githubusercontent.com/34737471/59552299-bd01da80-8fa2-11e9-9493-18dc53c934a8.jpg)
+ ```python
+if __name__ == "__main__": 
+    
+    trainX, trainy = load_dataset('D:\\Dataset\\data\\train')
+    print(trainX.shape, trainy.shape)
+    
+    # load test dataset
+    testX, testy = load_dataset('D:\\Dataset\\data\\val')
+
+```
+and put the directory address in the load_Dataset() in above code in face_preprocessing.py<br/>
+Then run embeddings.py->face_classification.py->test.y for getting the accuracy<br/>
+For usign webcam you can run the file real_time_recognizer.py<br/>
+ 
+```
+ 
+
+The model achieved an accuracy of around 95.6% which is quite good as there were a total of around 100 images per class<br/> 
 References [Google Facenet model](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn)  <br/>
-The model achieved an accuracy of around 95.6% which is quite good as there were a total of around 100 images per class<br/>  
+ 
