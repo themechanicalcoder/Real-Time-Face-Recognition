@@ -12,7 +12,7 @@ It is a Machine Learning project that recognizes faces of multiple people using 
   Python 3<br/>
   Tensorflow<br/>
   Keras<br/>
-  Open-cv
+  Open-cv<br/>
   Scikit Learn<br/>
   Numpy<br/>
   Matplotlib<br/>
