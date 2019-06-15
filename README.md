@@ -39,11 +39,11 @@ if __name__ == "__main__":
     testX, testy = load_dataset('D:\\Dataset\\data\\val')
 
 ```
-and put the directory address in the load_Dataset() in above code in face_preprocessing.py<br/>
+and put the directory address in the load_dataset() in above code in face_preprocessing.py<br/>
 Then run embeddings.py->face_classification.py->test.y for getting the accuracy<br/>
 For usign webcam you can run the file real_time_recognizer.py<br/>
  
-```
+
  
 
 The model achieved an accuracy of around 95.6% which is quite good as there were a total of around 100 images per class<br/> 
