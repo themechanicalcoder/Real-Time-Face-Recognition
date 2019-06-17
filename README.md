@@ -19,7 +19,7 @@ It is a Machine Learning project that recognizes faces of multiple people using 
 
 ## Algorithm
 1. First the face is detected and  extracted from the training images of all classes using opencv [haar-cascade](https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml)(face_preprocessing.py)<br/>
-2. Then the images are converted to a particular  size and  fed into the Google facenet which returns a 128 length vector per image and the labels are encoded into one-hot arrays.<br/>
+2. Then the images are converted to a particular  size and  fed into the Google facenet which returns a 128 length vector per image(via triplet loss) and the labels are encoded into one-hot arrays.<br/>
 3. The list of preprocessed images and one-hot arrays are then fed into SVM (face_classification.py)  <br/>
 4. The model is then tested for accuracy (test.py)
 5. For live prediction using webcam input image is taken from open-cv and it is again converted into 128 length vector using steps 1 to 3 <br/>
