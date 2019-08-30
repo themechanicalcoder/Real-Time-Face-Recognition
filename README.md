@@ -25,6 +25,7 @@ It is a Machine Learning project that recognizes faces of multiple people using 
 5. For live prediction using webcam input image is taken from open-cv and it is again converted into 128 length vector using steps 1 to 3 <br/>
 
 ## How to use this repository
+All the codes are in the "src" directory. <br/>
 Make the following directory structure  <br/>
 Dataset->data->train->training classes with images of respective classes <br/>
 Dataset->data->val->test classes with images of respective classes <br/>
