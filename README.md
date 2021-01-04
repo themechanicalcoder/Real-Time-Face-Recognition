@@ -47,6 +47,6 @@ For usign webcam you can run the file real_time_recognizer.py<br/>
 
  
 
-The model achieved an accuracy of around 89% which is quite good as there were a total of around 100 images per class<br/> 
+The model achieved an accuracy of around 82% which is quite good as there were a total of around 50 images per class<br/> 
 References-[Google Facenet model](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn)  <br/>
  
